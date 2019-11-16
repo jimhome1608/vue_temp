@@ -35,7 +35,16 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  created: function () 
+  {
+        this.debug();
+  },
+  methods: {
+  debug () {
+    window.console.log(this.$route.query.test)
   }
+} 
 }
 </script>
 
